@@ -1,0 +1,31 @@
+{
+  "name": "kde-float",
+  "version": "0.0.0",
+  "description": "Cycle windows between two customizable sizes with a keyboard shortcut",
+  "license": "MIT",
+  "homepage": "https://github.com/bamdadfr/kde-float",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bamdadfr/kde-float.git"
+  },
+  "author": {
+    "name": "Bamdad Sabbagh",
+    "url": "https://www.bamdad.fr/"
+  },
+  "scripts": {
+    "kwin:disable": "kwriteconfig6 --file kwinrc --group Plugins --key kdeFloatEnabled false && qdbus6 org.kde.KWin /KWin reconfigure",
+    "kwin:enable": "kwriteconfig6 --file kwinrc --group Plugins --key kdeFloatEnabled true && qdbus6 org.kde.KWin /KWin reconfigure",
+    "kwin:install": "kpackagetool6 --type=KWin/Script --install .",
+    "kwin:log": "journalctl -f | grep -E \"kdeFloat\"",
+    "kwin:upgrade": "kpackagetool6 --type=KWin/Script --upgrade .",
+    "kwin:uninstall": "kpackagetool6 --type=KWin/Script --remove kdeFloat && qdbus6 org.kde.kglobalaccel /component/kwin cleanUp",
+    "build": "cd src && zip -r ../kdeFloat.kwinscript contents/ metadata.json && cd .. && zip kdeFloat.kwinscript LICENSE",
+    "build:increment": "bin/increment.sh",
+    "start": "pnpm kwin:install && pnpm kwin:enable",
+    "restart": "pnpm kwin:disable && pnpm kwin:uninstall && pnpm kwin:install && pnpm kwin:enable && pnpm kwin:log",
+    "version": "npm run --silent package && git add -- metadata.json kdeFloat.kwinscript"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}

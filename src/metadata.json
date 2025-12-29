@@ -1,0 +1,23 @@
+{
+  "KPackageStructure": "KWin/Script",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "Bamdad Sabbagh"
+      }
+    ],
+    "Category": "Window Management",
+    "Description": "Cycle windows between two customizable sizes with a keyboard shortcut",
+    "Dependencies": [],
+    "EnabledByDefault": true,
+    "Icon": "preferences-system-windows-script-test",
+    "Id": "kdeFloat",
+    "License": "MIT",
+    "Name": "kdeFloat",
+    "Version": "0.0.0",
+    "Website": "https://github.com/bamdadfr/kde-float"
+  },
+  "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+  "X-Plasma-API": "javascript",
+  "X-Plasma-MainScript": "code/main.js"
+}

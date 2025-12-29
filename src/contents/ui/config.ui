@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KWinFloatConfig</class>
+ <widget class="QWidget" name="KWinFloatConfig">
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_WIDTH_1">
+     <property name="text">
+      <string>First width:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QDoubleSpinBox" name="kcfg_WIDTH_1">
+     <property name="minimum">
+      <double>0.1</double>
+     </property>
+     <property name="maximum">
+      <double>1.0</double>
+     </property>
+     <property name="singleStep">
+      <double>0.05</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_HEIGHT_1">
+     <property name="text">
+      <string>First height:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDoubleSpinBox" name="kcfg_HEIGHT_1">
+     <property name="minimum">
+      <double>0.1</double>
+     </property>
+     <property name="maximum">
+      <double>1.0</double>
+     </property>
+     <property name="singleStep">
+      <double>0.05</double>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_WIDTH_2">
+     <property name="text">
+      <string>Second width:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDoubleSpinBox" name="kcfg_WIDTH_2">
+     <property name="minimum">
+      <double>0.1</double>
+     </property>
+     <property name="maximum">
+      <double>1.0</double>
+     </property>
+     <property name="singleStep">
+      <double>0.05</double>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_HEIGHT_2">
+     <property name="text">
+      <string>Second height:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDoubleSpinBox" name="kcfg_HEIGHT_2">
+     <property name="minimum">
+      <double>0.1</double>
+     </property>
+     <property name="maximum">
+      <double>1.0</double>
+     </property>
+     <property name="singleStep">
+      <double>0.05</double>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
