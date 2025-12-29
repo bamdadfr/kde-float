@@ -14,7 +14,7 @@
     "Id": "kdeFloat",
     "License": "MIT",
     "Name": "kdeFloat",
-    "Version": "0.0.0",
+    "Version": "1.0.0",
     "Website": "https://github.com/bamdadfr/kde-float"
   },
   "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
